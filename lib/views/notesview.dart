@@ -9,7 +9,7 @@ class NotesView extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-      floatingActionButton: CustomFloatingButton(),
+      floatingActionButton: const CustomFloatingButton(),
       body: Padding(
         padding: const EdgeInsets.symmetric(vertical: 32, horizontal: 24),
         child: Column(
