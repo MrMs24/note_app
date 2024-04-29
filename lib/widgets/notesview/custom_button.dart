@@ -5,8 +5,10 @@ class CustomButton extends StatelessWidget {
   const CustomButton({
     super.key,
     required this.text,
+    this.onpressed,
   });
   final String text;
+  final Function()? onpressed;
   @override
   Widget build(BuildContext context) {
     return ElevatedButton(
@@ -20,7 +22,7 @@ class CustomButton extends StatelessWidget {
           ),
         ),
       ),
-      onPressed: () {},
+      onPressed: onpressed,
       child: Center(
           child: Text(
         text,
